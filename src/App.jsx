@@ -29,6 +29,8 @@ import {
   Zap,
 } from "lucide-react";
 
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
 const profile = {
   name: "Pratik Raj",
   title: "Full-Stack Developer",
@@ -37,7 +39,8 @@ const profile = {
   phone: "+91-9386152006",
   github: "https://github.com/pratik-dev777",
   linkedin: "https://linkedin.com/in/pratikraj91",
-  resume: "/Pratik-Raj-Resume.pdf",
+  resume: withBase("Pratik-Raj-Resume.pdf"),
+  photo: withBase("profile.jpeg"),
   headline:
     "ECE student and self-taught full-stack developer building useful, animated, production-minded web experiences.",
   summary:
@@ -372,7 +375,7 @@ function Hero() {
           <div className="orbital-ring ring-one" />
           <div className="orbital-ring ring-two" />
           <div className="profile-frame">
-            <img src="/profile.jpeg" alt="Pratik Raj" />
+            <img src={profile.photo} alt="Pratik Raj" />
           </div>
           <div className="status-card glass">
             <span className="pulse" />
