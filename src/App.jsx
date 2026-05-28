@@ -51,7 +51,7 @@ const navItems = ["home", "about", "experience", "projects", "skills", "achievem
 
 const stats = [
   { value: "9", label: "Week paid full-stack internship" },
-  { value: "7+", label: "Practical projects shipped" },
+  { value: "10+", label: "Repo-backed projects showcased" },
   { value: "8.6", label: "Best semester SGPA" },
   { value: "2nd", label: "EY 6.0 Hackathon round" },
 ];
@@ -85,64 +85,117 @@ const experience = [
 
 const projects = [
   {
-    title: "TextUtils",
-    stack: ["React.js", "JavaScript", "CSS"],
-    category: "Web App",
-    repo: "",
+    title: "East Central Railway Document Viewer",
+    stack: ["HTML", "CSS", "JavaScript", "PDF.js", "PDF-Lib"],
+    category: "Full Stack",
+    repo: "https://github.com/pratik-dev777/railway-project-webAPP",
     summary:
-      "Feature-rich text manipulation utility with case conversion, cleanup tools, copy actions, text-to-speech, live preview, summary stats, and dark mode.",
+      "Internship project for Danapur Division station-board PDFs with station search, interactive railway map markers, PDF preview, section diagrams, downloads, and helper tooling.",
+    accent: "rose",
+    preview: "railway",
+    image: withBase("project-previews/railway-preview.jpg"),
+    featured: true,
+  },
+  {
+    title: "AIBillFIX",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Vitest"],
+    category: "AI / SaaS",
+    repo: "https://github.com/pratik-dev777/AI-BILL-FIX-webAPP",
+    summary:
+      "AI spend-audit SaaS that lets startups enter tool usage, runs deterministic savings rules, persists audits with Supabase, supports public audit pages, and includes lead capture.",
     accent: "emerald",
-    preview: "text",
+    preview: "aiAudit",
+    featured: true,
   },
   {
-    title: "Currency Converter",
-    stack: ["HTML", "CSS", "JavaScript", "API"],
-    category: "API App",
-    repo: "",
+    title: "EY Hackathon AgentAI Platform",
+    stack: ["React", "TypeScript", "Shadcn UI", "Python", "Scikit-learn"],
+    category: "AI / ML",
+    repo: "https://github.com/pratik-dev777/EY_HACKATHON_6.0_frontend",
+    links: [
+      { label: "Frontend", url: "https://github.com/pratik-dev777/EY_HACKATHON_6.0_frontend" },
+      { label: "Backend", url: "https://github.com/pratik-dev777/EY-backend" },
+    ],
     summary:
-      "Responsive converter that calls a live currency API and transforms exchange data into a quick, usable interface.",
+      "EY Techathon 6.0 solution combining an AgentAI predictive-maintenance dashboard with a Python vehicle-telemetry backend for fault prediction.",
+    accent: "cyan",
+    preview: "telemetry",
+    image: withBase("project-previews/ey-preview.jpg"),
+    featured: true,
+  },
+  {
+    title: "VLSI FPGA Median Filter",
+    stack: ["Verilog", "Xilinx", "Vivado", "MATLAB", "Image Processing"],
+    category: "Hardware",
+    repo: "https://github.com/pratik-dev777/VLSI-FPGA-PROJECT",
+    summary:
+      "3x3 median-filter image-denoising project with Verilog modules, pipelined comparator sort network, Vivado-friendly testbench, MATLAB preprocessing, and waveform outputs.",
+    accent: "violet",
+    preview: "fpga",
+    image: withBase("project-previews/vlsi-preview.jpg"),
+    featured: true,
+  },
+  {
+    title: "She Can Foundation Connect",
+    stack: ["React", "Vite", "Express", "SQLite", "JWT", "Zod"],
+    category: "Full Stack",
+    repo: "https://github.com/pratik-dev777/Form-and-adminPanel-landingPage",
+    summary:
+      "Full-stack contact portal with responsive landing page, validated form submission, Express APIs, SQLite persistence, JWT-protected admin dashboard, and status management.",
     accent: "amber",
-    preview: "currency",
+    preview: "form",
+    image: withBase("project-previews/shecan-preview.jpg"),
   },
   {
-    title: "Weather Speaker",
-    stack: ["Python", "API", "Text-to-Speech"],
-    category: "Python",
-    repo: "",
+    title: "PopX Login UI",
+    stack: ["React", "Vite", "CSS"],
+    category: "Frontend",
+    repo: "https://github.com/pratik-dev777/pratik-loginUI",
     summary:
-      "Python utility that fetches weather information and announces the result with speech output for a hands-free experience.",
+      "Pixel-conscious React implementation of a mobile onboarding flow with landing, login, signup, and account settings screens.",
+    accent: "lime",
+    preview: "login",
+  },
+  {
+    title: "Python Weather Voice App",
+    stack: ["Python", "WeatherAPI", "Requests", "pyttsx3"],
+    category: "Python",
+    repo: "https://github.com/pratik-dev777/python-weather-app",
+    summary:
+      "Command-line weather assistant that fetches real-time WeatherAPI data for any city and reads the current temperature aloud with text-to-speech.",
     accent: "cyan",
     preview: "weather",
   },
   {
-    title: "PDF Merger",
-    stack: ["Python", "PyPDF2"],
-    category: "Automation",
+    title: "Currency Converter",
+    stack: ["HTML", "CSS", "JavaScript", "Fetch API"],
+    category: "API",
     repo: "",
     summary:
-      "Small productivity program that merges user-selected PDF files into one document using Python PDF tooling.",
-    accent: "violet",
-    preview: "pdf",
+      "Local unpushed Fetch API project with currency dropdowns, country flags, live exchange-rate calls, validation, and instant conversion output.",
+    accent: "amber",
+    preview: "currency",
   },
   {
-    title: "FPGA Median Filter",
-    stack: ["Verilog", "Xilinx", "Image Processing"],
-    category: "ECE",
-    repo: "",
-    summary:
-      "Ongoing minor project implementing a median filter for salt-and-pepper noise reduction with FPGA simulation basics.",
-    accent: "rose",
-    preview: "fpga",
-  },
-  {
-    title: "Game Arcade",
+    title: "Rock Paper Scissors",
     stack: ["HTML", "CSS", "JavaScript"],
     category: "Games",
-    repo: "",
+    repo: "https://github.com/pratik-dev777/rock-paper-scissors-game",
     summary:
-      "Interactive Rock-Paper-Scissors and two-player Tic-Tac-Toe games with browser-native logic and responsive styling.",
+      "Browser game with image-based choices, score tracking, randomized computer moves, and instant win/loss/draw feedback.",
     accent: "lime",
     preview: "game",
+    image: withBase("project-previews/rps-preview.jpg"),
+  },
+  {
+    title: "Tic Tac Toe Web App",
+    stack: ["HTML", "CSS", "JavaScript"],
+    category: "Games",
+    repo: "https://github.com/pratik-dev777/tic-tac-toe-webAPP",
+    summary:
+      "Two-player classic Tic Tac Toe game with automatic winner detection, reset/new-game controls, and a clean browser-based interface.",
+    accent: "emerald",
+    preview: "tictactoe",
   },
 ];
 
@@ -263,7 +316,12 @@ function App() {
         <Hero />
         <About />
         <Experience />
-        <Projects filters={filters} filteredProjects={filteredProjects} projectFilter={projectFilter} setProjectFilter={setProjectFilter} />
+        <Projects
+          filters={filters}
+          filteredProjects={filteredProjects}
+          projectFilter={projectFilter}
+          setProjectFilter={setProjectFilter}
+        />
         <Skills />
         <Achievements />
         <Contact />
@@ -476,7 +534,11 @@ function Experience() {
 
 function Projects({ filters, filteredProjects, projectFilter, setProjectFilter }) {
   return (
-    <Section id="projects" eyebrow="Projects" title="Selected builds across web apps, automation, games, APIs, and ECE experiments.">
+    <Section
+      id="projects"
+      eyebrow="Projects"
+      title="Major builds with real repos, visual previews, and practical engineering range."
+    >
       <div className="filter-row" role="tablist" aria-label="Project filters">
         {filters.map((filter) => (
           <button
@@ -504,7 +566,7 @@ function Projects({ filters, filteredProjects, projectFilter, setProjectFilter }
             >
               <ProjectPreview project={project} />
               <div className="project-topline">
-                <span>{project.category}</span>
+                <span>{project.featured ? "Featured" : project.category}</span>
                 <ArrowUpRight size={18} />
               </div>
               <h3>{project.title}</h3>
@@ -515,15 +577,22 @@ function Projects({ filters, filteredProjects, projectFilter, setProjectFilter }
                 ))}
               </div>
               <div className="project-actions">
-                {project.repo ? (
+                {project.links?.length ? (
+                  project.links.map((link) => (
+                    <a href={link.url} target="_blank" rel="noreferrer" key={link.url}>
+                      <Github size={17} />
+                      {link.label}
+                    </a>
+                  ))
+                ) : project.repo ? (
                   <a href={project.repo} target="_blank" rel="noreferrer">
                     <Github size={17} />
-                    Repository
+                    View repo
                   </a>
                 ) : (
                   <span>
                     <Github size={17} />
-                    Repo link pending
+                    Local project files
                   </span>
                 )}
               </div>
@@ -538,18 +607,38 @@ function Projects({ filters, filteredProjects, projectFilter, setProjectFilter }
 function ProjectPreview({ project }) {
   return (
     <div className={`project-preview preview-${project.preview}`} aria-label={`${project.title} screenshot preview`}>
-      <div className="preview-window">
+      {project.image ? (
+        <img className="project-preview-image" src={project.image} alt={`${project.title} preview`} />
+      ) : null}
+      <div className={`preview-window ${project.image ? "preview-overlay" : ""}`}>
         <div className="preview-dots">
           <i />
           <i />
           <i />
         </div>
-        {project.preview === "text" && (
-          <div className="text-preview">
-            <span>TextUtils</span>
-            <strong>Words 184</strong>
-            <p>camelCase | PascalCase | snake_case</p>
-            <div />
+        {project.preview === "railway" && (
+          <div className="railway-preview">
+            <strong>Danapur Division</strong>
+            <span>Station search</span>
+            <div className="rail-track">
+              <i />
+              <i />
+              <i />
+              <i />
+            </div>
+            <small>PDF viewer + section diagrams</small>
+          </div>
+        )}
+        {project.preview === "aiAudit" && (
+          <div className="audit-preview">
+            <span>AI spend audit</span>
+            <strong>$1.2k/mo</strong>
+            <div>
+              <i />
+              <i />
+              <i />
+            </div>
+            <small>Supabase saved report</small>
           </div>
         )}
         {project.preview === "currency" && (
@@ -560,6 +649,13 @@ function ProjectPreview({ project }) {
             <span>Live API rate</span>
           </div>
         )}
+        {project.preview === "login" && (
+          <div className="login-preview">
+            <strong>Welcome to PopX</strong>
+            <span>Create Account</span>
+            <small>Login | Signup | Profile</small>
+          </div>
+        )}
         {project.preview === "weather" && (
           <div className="weather-preview">
             <Sun size={34} />
@@ -567,12 +663,17 @@ function ProjectPreview({ project }) {
             <span>Patna | Voice output</span>
           </div>
         )}
-        {project.preview === "pdf" && (
-          <div className="pdf-preview">
-            <span>PDF A</span>
-            <ChevronRight size={18} />
-            <span>PDF B</span>
-            <strong>Merged.pdf</strong>
+        {project.preview === "telemetry" && (
+          <div className="telemetry-preview">
+            <strong>AgentAI</strong>
+            <span>Fault prediction</span>
+            <div className="node-map">
+              <i />
+              <i />
+              <i />
+              <i />
+              <i />
+            </div>
           </div>
         )}
         {project.preview === "fpga" && (
@@ -585,12 +686,26 @@ function ProjectPreview({ project }) {
             <strong>Median Filter</strong>
           </div>
         )}
+        {project.preview === "form" && (
+          <div className="form-preview">
+            <strong>Validated API</strong>
+            <span>SQLite submissions</span>
+            <small>Admin dashboard</small>
+          </div>
+        )}
         {project.preview === "game" && (
           <div className="game-preview">
             <span>X</span>
             <span>O</span>
             <span>X</span>
             <strong>Arcade logic</strong>
+          </div>
+        )}
+        {project.preview === "tictactoe" && (
+          <div className="tictactoe-preview">
+            {["X", "O", "X", "O", "X", "", "", "O", "X"].map((mark, index) => (
+              <span key={`${mark}-${index}`}>{mark}</span>
+            ))}
           </div>
         )}
       </div>
