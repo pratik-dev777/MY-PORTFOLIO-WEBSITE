@@ -27,5 +27,16 @@ The production build will be generated in `dist`.
 
 ## Deploy
 
-This app is ready for GitHub Pages, Vercel, Netlify, or any static host that supports Vite builds.
+This app is ready for GitHub Pages.
 
+1. Open the GitHub repo settings.
+2. Go to **Pages**.
+3. Set **Source** to **GitHub Actions**.
+4. Go to **Actions**.
+5. Run **Deploy to GitHub Pages**.
+
+The live URL will be:
+
+```text
+https://pratik-dev777.github.io/MY-PORTFOLIO-WEBSITE/
+```
